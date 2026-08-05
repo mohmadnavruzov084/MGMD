@@ -36,9 +36,10 @@ export const Contact = () => (
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="text-[10px] font-bold text-white transition-opacity duration-300 hover:opacity-65 sm:text-xs"
+            className="inline-flex items-center gap-1 text-[10px] font-bold text-white transition-opacity duration-300 hover:opacity-65 sm:text-xs"
           >
-            {label} ↗
+            {label}
+            <ArrowUpRight className="size-3" aria-hidden="true" />
           </a>
         ))}
       </div>
